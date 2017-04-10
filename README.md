@@ -14,8 +14,8 @@ Support iOS10 call system's address book,and support cocoaPods.
 
     - (IBAction)click:(id)sender {
         [[TOMMaillist sharedInstans] maillistUsingViewController:self UsingBlock:^(NSDictionary *passDict) {
-            NSString *str = [NSString stringWithFormat:@"%@%@:%@",passDict[@"familyName"],passDict[@"givenName"],passDict[@"labValue"]];
-        [self.button setTitle:str forState:UIControlStateNormal];
+            NSString *str = [NSString stringWithFormat:@"%@%@:%@",passDict[@"familyName"],passDict[@"givenName"],passDict[@"labValue"]];
+            [self.button setTitle:str forState:UIControlStateNormal];
             NSLog(@"%@",str);
         }];
     }
